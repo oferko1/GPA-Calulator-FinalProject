@@ -88,7 +88,7 @@ function render() {
           '<span>' + gradeLetter(c.grade) + '</span>' +
           '<button class="delete" onclick="deleteCourse(' + i + ');">x</button>' +
         '</div>';
-    
+    }
   }
   document.getElementById("course-list").innerHTML = listHTML;
 
@@ -99,7 +99,7 @@ function render() {
     qualityPoints = qualityPoints + courses[j].credits * courses[j].grade;
   }
 
-  vsr gpa = 0;
+  var gpa = 0;
   if (totalCredits > 0) {
     gpa = qualityPoints / totalCredits;
   }
