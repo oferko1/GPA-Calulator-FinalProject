@@ -43,7 +43,7 @@ That's it. No server, no install.
 
 ## Usage
 
-1. Type a course name (e.g. `CMSC 365`)
+1. Type a course name (e.g. `COSC 365`)
 2. Enter credit hours (0.5–12, in 0.5 increments)
 3. Pick a letter grade from the dropdown
 4. Click **Add Course**
@@ -83,6 +83,6 @@ Courses are saved to the browser's `localStorage` under the key `gpa-calculator:
 
 Any browser from the last several years. Uses CSS custom properties, Flexbox, ES6 (`const`, arrow functions, template literals, `FormData`), and `localStorage` — all universally supported.
 
-## Author
+## Authors
 
 Owen Ferko, Jack MacMurdo — Computer Science, Indiana University of Pennsylvania
