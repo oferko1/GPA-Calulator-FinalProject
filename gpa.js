@@ -77,7 +77,7 @@ function render() {
   var listHTML = "";
 
   if (courses.length == 0) {
-    listHTML = '<div class="empty">No courses yet add one above.</div>';
+    listHTML = '<div class="empty">No courses yet -- add one above.</div>';
   } else {
     for (var i = 0; i < courses.length; i++) {
       var c = courses[i];
@@ -105,7 +105,7 @@ function render() {
   }
 
   document.getElementById("gpa").innerHTML = round2(gpa);
-  document.getElementById("total-credits").innerHTML = round2(totalCredits);
+  document.getElementById("total-credits").innerHTML = totalCredits;
   document.getElementById("quality-points").innerHTML = round2(qualityPoints);
 
   if (courses.length > 0) {

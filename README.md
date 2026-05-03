@@ -1,3 +1,5 @@
+# GPA-Calulator-FinalProject
+Final Project for Web Architecture &amp; Application Development
 # GPA Calculator
 
 An interactive single-page GPA calculator built with vanilla HTML, CSS, and JavaScript. Add courses, see your cumulative GPA update live, and have your data persist across page reloads via `localStorage`.
