@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f0f1;
+  color: #2d2d2d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(134, 35, 52, 0.15);
+}
+
+header {
+  background-color: #862334;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+#gpa {
+  background-color: #F2A900;
+  color: #862334;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid #F2A900;
+  background-color: #fdfbfb;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.field.wide {
+  flex: 1;
+  flex-shrink: 1;
+  width: auto;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #862334;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.55rem 0.75rem;
+  border: 2px solid #d4c0c4;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #2d2d2d;
+  background: #fff;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #862334;
+  box-shadow: 0 0 0 3px rgba(134, 35, 52, 0.12);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+input[type="reset"],
+input[type="button"] {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+input[type="reset"] {
+  background-color: #e8dfe1;
+  color: #862334;
+}
+
+input[type="reset"]:hover {
+  background-color: #d4c0c4;
+}
+
+input[type="button"] {
+  background-color: #862334;
+  color: #ffffff;
+}
+
+input[type="button"]:hover {
+  background-color: #6e1c29;
+}
+
+input[type="button"]:active,
+input[type="reset"]:active {
+  transform: scale(0.97);
+}
+
+#list-section {
+  padding: 1.5rem 2rem;
+  min-height: 80px;
+}
+
+#list-section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #862334;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #F2A900;
+}
+
+#course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#course-list > * {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  background-color: #fdf7f8;
+  border-left: 4px solid #862334;
+  font-size: 0.95rem;
+}
+
+.course-name {
+  width: 25ch;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: auto;
+}
+
+
+.delete {
+  background: none;
+  border: 1px solid #862334;
+  color: #862334;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.delete:hover {
+  background-color: #862334;
+  color: #ffffff;
+}
+
+.empty {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+
+footer {
+  background-color: #862334;
+  color: #ffffff;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #F2A900;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}

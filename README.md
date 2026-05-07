@@ -31,15 +31,17 @@ No frameworks, no build step, no external dependencies.
 ## File Structure
 
 ```
-gpa-calculator.html    Single self-contained file (HTML + CSS + JS)
-README.md              This file
-ALGORITHM.md           Pseudocode and algorithm description
+gpaCalc.html    Markup and page structure
+styles.css      Stylesheet (linked from <head>)
+gpa.js          Application logic (loaded before </body>)
+README.md      This file
 ```
 
 ## How to Run
 
-1. Download `gpa-calculator.html`
-2. Double-click to open it in any modern browser
+1. Download `gpaCalc.html`, `styles.css`, and `gpa.js`
+2. Keep all three files together in the same folder
+3. Double-click `gpaCalc.html` or open it with any modern browser
 
 That's it. No server, no install.
 
