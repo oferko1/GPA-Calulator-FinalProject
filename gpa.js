@@ -104,7 +104,14 @@ function render() {
     gpa = qualityPoints / totalCredits;
   }
 
-  document.getElementById("gpa").innerHTML = round2(gpa);
+  var gpaEl = document.getElementById("gpa");
+  gpaEl.innerHTML = round2(gpa);
+  gpaEl.classList.remove("gpa-high", "gpa-mid", "gpa-low");
+  if (courses.length > 0) {
+    if (gpa >= 3.5) gpaEl.classList.add("gpa-high");
+    else if (gpa >= 2.0) gpaEl.classList.add("gpa-mid");
+    else gpaEl.classList.add("gpa-low");
+  }
   document.getElementById("total-credits").innerHTML = totalCredits;
   document.getElementById("quality-points").innerHTML = round2(qualityPoints);
 
@@ -118,4 +125,3 @@ function render() {
 }
 
 render();
-// Test //
